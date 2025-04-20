@@ -109,6 +109,15 @@ nav {
 
 }
 
+.nav__links a{
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+.nav__links a:hover{
+    border-bottom: 2px solid #6415ff;
+}
+
 .nav__link {
     font-size: 14px;
     font-weight: 612;
@@ -701,12 +710,18 @@ QUALITY WORK ↓
 .plans__blob {
     position: absolute;
     transform: translateX(96px) translateY(192px) scaleX(1) scaleY(1);
-    z-index: -10;
+    z-index: -1;
+    top: -50px;
+    right: -50px;
     left: 0;
     bottom: 0;
     height: 256px;
     width: 256px;
     opacity: 0.25;
+}
+
+.plans__blob--container{
+    position: relative;
 }
 
 
@@ -838,26 +853,42 @@ VALUES ↓
 #values .row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    gap: 40px;
+
 }
 
 .values__description {
     padding: 32px 64px 32px 0;
+    width: 50%;
 }
 
+/* 
 .value{
     width: 50%;
     margin-top: 32px;
+}
+    */
+
+.value{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 
 .values__list {
     display: flex;
+    gap: 32px;
+    margin-top: 32px;
+    flex-wrap: wrap;
 }
 
 .value__title {
     display: flex;
     align-items: center;
+    margin-bottom: 16px;
 }
 
 .value:nth-child(1) .value__img--wrapper {
@@ -870,17 +901,22 @@ VALUES ↓
 }
 
 .value__img--wrapper {
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
+    border-radius: 9999px;
     display: flex;
     justify-content: center;
     border-radius: 50%;
     align-items: center;
+    background-color: #9ae6b4;
+    flex-shrink: 0;
 }
 
 .value__img {
     width: 20px;
     height: 20px;
+    max-width: 500px;
+    object-fit: contain;
 }
 
 .value__name {
@@ -892,9 +928,19 @@ VALUES ↓
 
 .value__para {
     margin-top: 16px;
-    line-height: 1.625;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.75;
     color: #718096;
 }
+
+.value:nth-child(1) .value__img--wrapper {
+    background-color: #9ae6b4; /* green for Affordable */
+  }
+
+  .value:nth-child(2) .value__img--wrapper {
+    background-color: #feb2b2; /* red for Professional */
+  }
 
 .value:nth-of-type(2) {
     margin-top: 32px;
@@ -1745,6 +1791,7 @@ MOBILE RESPONSIVENESS ↓
         display: none;
     }
 }
+}
 
 @media(max-width: 768px) {
 
@@ -1825,6 +1872,7 @@ MOBILE RESPONSIVENESS ↓
 
     .values__list {
         margin: 0 auto;
+        flex-direction: column;
     }
     .value:nth-of-type(1) {
         margin-right: 0px;
@@ -1833,6 +1881,7 @@ MOBILE RESPONSIVENESS ↓
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     #pricing .row {

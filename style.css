@@ -30,7 +30,7 @@ body {
 }
 
 .container {
-    padding: 80px 0;
+    padding: 96px 0;
 }
 
 .purple {
@@ -434,13 +434,10 @@ header .row {
 .header__email--btn {
     margin: 8px;
     height: calc(100% - 16PX);
-<<<<<<< HEAD
-=======
 
     padding: 12px 24px;
 
     z-index: 2;
->>>>>>> cbffe4c199aae76d2a8aeedb5bba72b03ac3113a
     border-radius: 500PX;
     width: 160px;
     border: none;
@@ -870,42 +867,36 @@ VALUES ↓
 #values .row {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
+    align-items: center;
 
 }
 
 .values__description {
     padding: 32px 64px 32px 0;
-    width: 50%;
+    
+
 }
 
-/* 
-.value{
-    width: 50%;
-    margin-top: 32px;
-}
-    */
 
 .value{
-    flex: 1 1 45%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    width: 50%;
 }
 
 
 .values__list {
     display: flex;
-    gap: 32px;
-    margin-top: 32px;
-    flex-wrap: wrap;
+    
+   
 }
 
 .value__title {
     display: flex;
     align-items: center;
     margin-bottom: 16px;
+    display:inline-flex;
+    justify-content: space-between;
 }
 
 .value:nth-child(1) .value__img--wrapper {
@@ -920,8 +911,8 @@ VALUES ↓
 .value__img--wrapper {
     width: 40px;
     height: 40px;
-    border-radius: 9999px;
     display: flex;
+    border-radius: 9999px;
     justify-content: center;
     border-radius: 50%;
     align-items: center;
@@ -932,7 +923,6 @@ VALUES ↓
 .value__img {
     width: 20px;
     height: 20px;
-    object-fit: contain;
 }
 
 .value__name {
@@ -1033,11 +1023,12 @@ PRICING ↓
 }
 
 
-/*
+
 div{
-    border: 1px solid red;
+    font-display: block;
+    unicode-bidi: isolate;
 }
-*/
+
 
 .plan:nth-child(1) .plan__stripe,
 .plan:nth-child(1),
@@ -1632,8 +1623,6 @@ MOBILE RESPONSIVENESS ↓
 
     .feature{
         width: 50%;
-<<<<<<< HEAD
-=======
     .header__description,
     .header__img--wrapper {
         width: 100%;
@@ -1773,7 +1762,6 @@ MOBILE RESPONSIVENESS ↓
 
     .start__button{
         padding: 16px 32px;
->>>>>>> cbffe4c199aae76d2a8aeedb5bba72b03ac3113a
     }
 
     footer {
@@ -1838,8 +1826,6 @@ MOBILE RESPONSIVENESS ↓
 
     .header__email--btn{
         width: 100%;
-<<<<<<< HEAD
-=======
     .features {
         justify-content: center;
     }
@@ -1849,7 +1835,6 @@ MOBILE RESPONSIVENESS ↓
     }
     .section__para {
         font-size: 14px;
->>>>>>> cbffe4c199aae76d2a8aeedb5bba72b03ac3113a
     }
 
     #quality .row,
@@ -1980,8 +1965,6 @@ MOBILE RESPONSIVENESS ↓
         width: 100%;
     }
 }
-<<<<<<< HEAD
-=======
     .section__title {
         line-height: 1.25;
     }
@@ -2111,4 +2094,3 @@ MOBILE RESPONSIVENESS ↓
         line-height: 1.5;
     }
 }
->>>>>>> cbffe4c199aae76d2a8aeedb5bba72b03ac3113a

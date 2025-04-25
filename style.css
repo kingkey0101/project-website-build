@@ -49,8 +49,7 @@ main {
 
 img {
     width: 100%;
-    overflow-clip-margin: content-box;
-    overflow: clip;
+    
 }
 
 
@@ -179,10 +178,7 @@ nav {
     line-height: 1.5;
     border: none;
     width: auto;
-    transition: all 300ms ease;
-    font-weight: 700;
-
-
+    transition: all 300ms ;
 }
 
 .nav__link--primary:after {
@@ -199,6 +195,10 @@ a {
 
 .nav__link--primary:hover {
     background-color: rgba(80, 17, 204);
+    color: #ffffff4d;
+    align-items: center;
+    transition: all 300ms ease;
+    opacity: 1;
 }
 
 
@@ -264,11 +264,8 @@ button {
 
 .header__email--btn:hover {
     background-color: rgba(60, 13, 153);
-    color: #ffffff4d;
-    align-items: center;
-    transition: all 300ms ease;
-    opacity: 1;
-    */
+    
+    
 }
 
 .btn__menu--close {
@@ -1354,10 +1351,11 @@ START / CALL TO ACTION ↓
 
 .start__buttons {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     flex-wrap: wrap;
 }
 
+/* 
 .start__button--secondary {
     background-color: transparent;
     color: #fff;
@@ -1369,6 +1367,7 @@ START / CALL TO ACTION ↓
 .start__button--secondary:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
+    */
 
 .start__button:nth-child(1) {
     background: #f56565;
@@ -1384,6 +1383,7 @@ START / CALL TO ACTION ↓
 .start__button:nth-child(2) {
     border: 1px solid rgb(160, 174, 192);
     transition: all 300ms;
+    background: rgb(100, 21, 255);
 }
 
 .start__button:hover:nth-child(2) {
@@ -1706,7 +1706,7 @@ MOBILE RESPONSIVENESS ↓
     }
 
     .feature__para {
-        font-size: 16px;
+        max-width: none;
     }
 
     .section__para {
@@ -1921,7 +1921,6 @@ MOBILE RESPONSIVENESS ↓
 
     .values__list {
         margin: 0 auto;
-        flex-direction: column;
     }
 
     .value:nth-of-type(1) {
@@ -2040,6 +2039,7 @@ MOBILE RESPONSIVENESS ↓
     }
 
     .header__email--btn {
+        width: 100%;
         padding: 16px 0;
         margin: 16px 0;
         margin-bottom: 0px;

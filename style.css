@@ -360,7 +360,7 @@ header .row {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 41.6667%;
+    width: 100%;
 }
 
 .header__description {
@@ -571,6 +571,11 @@ FEATURES ↓
     line-height: 2;
     font-weight: 500;
 
+}
+
+#features .section__para{
+    text-align: center;
+    max-width: 576px;
 }
 
 #features .section__title,
@@ -1594,6 +1599,7 @@ MOBILE RESPONSIVENESS ↓
 @media(max-width: 1280px) {
     header .row {
         align-items: flex-end;
+        width: 100%;
     }
 
     h1 {
@@ -1619,6 +1625,7 @@ MOBILE RESPONSIVENESS ↓
 
     header .row {
         align-items: flex-end;
+        width: 100%;
     }
 
     .plan__bottom {
@@ -1651,6 +1658,7 @@ MOBILE RESPONSIVENESS ↓
     header .row {
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     .feature {
@@ -1751,16 +1759,13 @@ MOBILE RESPONSIVENESS ↓
     #steps .row {
         flex-direction: column;
         text-align: center;
+        
     }
 
     .steps__description,
     .steps__img--wrapper {
         width: 100%;
         padding: 0;
-    }
-
-    .steps__grid {
-        display: none;
     }
 
     .plans {
@@ -1815,9 +1820,7 @@ MOBILE RESPONSIVENESS ↓
         margin: 32px, 0;
     }
 
-    .quality__grid {
-        display: none;
-    }
+    
 
     #steps .row {
         flex-direction: column;
@@ -1828,11 +1831,10 @@ MOBILE RESPONSIVENESS ↓
     .steps__img--wrapper {
         width: 100%;
         padding: 0;
+        
     }
 
-    .steps__grid {
-        display: none;
-    }
+    
 }
 
 
@@ -1841,6 +1843,7 @@ MOBILE RESPONSIVENESS ↓
     header .row {
         flex-direction: column;
         text-align: center;
+        width: 100%;
     }
 
     .header__description,
@@ -1875,6 +1878,7 @@ MOBILE RESPONSIVENESS ↓
 
     .section__para {
         font-size: 14px;
+        margin-bottom: 32px;
     }
 
     #quality .row,
@@ -1889,6 +1893,7 @@ MOBILE RESPONSIVENESS ↓
         padding: 0;
         margin-top: 64px;
         text-align: center;
+        
     }
 
     .quality__description,
@@ -1901,6 +1906,7 @@ MOBILE RESPONSIVENESS ↓
     .testimonials__img {
         width: 100%;
         max-width: 448px;
+        
     }
 
     #steps .row,
@@ -1912,6 +1918,7 @@ MOBILE RESPONSIVENESS ↓
     .step {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
 
     .step__description {
@@ -2087,7 +2094,13 @@ MOBILE RESPONSIVENESS ↓
 
     .steps__list {
         margin-top: 48px;
+        margin: 0 auto;
     }
+
+   
+
+
+    
 
     .btn {
         line-height: 1.5;
